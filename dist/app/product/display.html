@@ -1,0 +1,7 @@
+<td>{{product.name}}</td>
+<td>{{product.category}}</td>
+<td>{{product.createDate | date : 'MM/dd/yyyy' }}</td>
+<td>
+    <button type="button" class="btn btn-primary" ng-click="editProduct(product)">Edit</button>
+    <button type="button" class="btn btn-danger" ng-click="deleteProduct(product.id)">Delete</button>
+</td>

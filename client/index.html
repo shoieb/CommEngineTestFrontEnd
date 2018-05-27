@@ -1,0 +1,55 @@
+<!doctype html>
+<!--[if lt IE 8]>         <html class="no-js lt-ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CommEngine Test FrontEnd</title>
+    <meta name="description" content="CommEngine Test FrontEnd">
+    <meta name="keywords" content="CommEngine Test FrontEnd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+    <!-- Fonts here -->
+	
+    <!-- build:css({.tmp,client}) styles/main.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <!-- endbuild -->
+	
+</head>
+
+<body ng-app="app" id="app" class="" ng-controller="AppCtrl">
+  
+  <div class="container-fluid">
+    <section ui-view></section>
+  </div> 
+
+  <!-- build:js scripts/vendor.js -->   
+  <script src="bower_components/jquery/dist/jquery.min.js"></script> 
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>	
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>    
+  <!-- endbuild -->
+  
+  <!-- build:js scripts/app.js -->
+  <!-- inject:js -->
+  
+  <script src="app/product/product.module.js"></script>
+  
+  <script src="app/app.js"></script>
+  
+  <script src="app/app.settings.js"></script>
+  
+  <script src="app/product/product.controller.js"></script>
+  
+  <script src="app/product/product.service.js"></script>
+  
+  <!-- endinject -->
+  <!-- endbuild -->	
+</body>
+
+</html>
